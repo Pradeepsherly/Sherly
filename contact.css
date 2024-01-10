@@ -1,0 +1,50 @@
+
+.glass {
+    background: linear-gradient(135deg, rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(10px);
+    width: 500px;
+    
+    margin-left: 400px;
+    margin-top: 100px;
+    border: 1px solid rgba(255,255,255,0.18);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0,0, 0,0.37);
+    padding: 30px;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    height: 30px;
+    margin-top: 5px;
+}
+.glass td a {
+    color: silver;
+    font-family: 'poppins';
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 50px;
+    
+}

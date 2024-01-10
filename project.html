@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pradeep Raj Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+</head>
+<body class="dark-mode">
+
+<header class="container">
+    <div class="page-header">
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="mainicon">
+            <div class="menu">
+                <i class="bx bx-menu"></i>
+            </div>
+        </label>
+   <ul>
+    <li>
+      <a href="index.html"  style="--navAni:1">Home</a>
+    </li>
+    <li>
+      <a href="about.html" style="--navAni:2">About</a>
+    </li>
+    <li>
+      <a href="skills.html" style="--navAni:3">Skills</a>
+    </li>
+    <li>
+      <a href="#" class="active" style="--navAni:4">Projects</a>
+    </li>
+    <li>
+      <a href="contact.html" style="--navAni:5">Contact</a>
+    </li>
+   </ul>
+   <label class="mode">
+    <input type="checkbox" id="darkModeToggle">
+    <i class="bx bxs-moon">  
+    </i>
+   </label>
+  </div>
+</header>
+<div class="p-container" >
+    <div class="p-heading">Projects</div>
+</div>
+<h1>Web Development</h2>
+<div class="web">
+    <div class="parallax">              
+        <h2 style="color: silver;">
+            Cricxz website using Bootstrap .
+        </h2>
+        <a href="https://pradeepsherly.github.io/cricxz.in/live.html">
+            <img src="Screenshot (58).png" alt="">
+        </a>
+    </div>
+    <div class="parallax">              
+        <h2 style="color: silver;">
+           Gym Website  using  Javascript.
+        </h2>
+        <a href="https://pradeepsherly.github.io/gym/">
+            <img src="Screenshot (56).png" alt="">
+        </a>
+    </div>
+    <div class="parallax">              
+        <h2 style="color: silver;">
+            Website layout using HTML and CSS.
+        </h2>
+        <a href="https://pradeepsherly.github.io/cricxz/Live.html">
+            <img src="Screenshot (26).png" alt="">
+        </a>
+    </div>
+
+ </div>
+<script>
+  
+  const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+    
+</script>
+</body>
+</html>

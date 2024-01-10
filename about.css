@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+:root {
+    --primary-color: #f9532d;
+    --primary-dark: #1F252E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: #ffffff;
+    height: 100vh;
+    color: #000;
+}
+
+/* Genral */
+.container {
+    padding: 0 8.4rem;
+}
+.bxs-moon:before {
+  content: "\ee4e";
+}
+
+/* Nav */
+header {
+    box-shadow: 0 4px 17px rgba(0, 0, 0, .1);
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    opacity: 0;
+    animation: leftSideAni 1s ease forwards;
+}
+
+.logo a {
+    color: #000;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    gap: .6rem;
+    list-style-type: none;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+li a {
+    display: inline-block;
+    padding: .3rem 1rem;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    border-radius: 36px;
+    line-height: 2;
+    transition: .3s;
+    opacity: 0;
+    animation: navani .3s ease forwards;
+    animation-delay: calc(.15s * var(--navAni));
+}
+
+li a.active,
+li a:hover {
+    color: var(--primary-color);
+}
+
+.dark-mode {
+    background-color: var(--primary-dark);
+    color: #ffffff;
+}
+
+.dark-mode input {
+    display: none;
+}
+
+.dark-mode .logo a, 
+.dark-mode ul li a, 
+.dark-mode .main h3, 
+.dark-mode .main h1 {
+    color: #fff;
+}
+.dark-mode ul li a.active, .dark-mode ul li a:hover {
+    color: var(--primary-color);
+}
+.dark-mode .images {
+    background: linear-gradient(145deg, #1f252e, #2e3239);
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #1b1f27;
+    border-top: 2px solid var(--primary-color);
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.dark-mode header {
+    box-shadow: 0 4px 17px rgb(80 80 80 / 31%);
+    background: var(--primary-dark);
+}
+
+.mode input {
+    display: none;
+}
+
+@keyframes navani {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+h2{
+    display: block;
+    font-weight: bold;
+}
+.text{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-size: 5em;
+    letter-spacing: 10px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0008);
+    line-height: 0.7em;
+    animation: glow 5s linear infinite;
+}
+@keyframes glow{
+    0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+        color: #0e3748;
+        text-shadow: none;
+}
+18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4;
+    color: white;
+}
+}
+.greetings .intro {
+    font-family: 'poppins';
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: 500px;
+    color: silver;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.greetings .heading {
+    font-family: 'poppins';
+    font-size: 30px;
+    margin-top: 50px;
+    text-align: left;
+    font-weight: 500px;
+    color: #78C1F3;
+}
+.greetings .desc {
+    font-family: 'poppins';
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: bold;
+    color:silver;
+}
+.greetings h3 {
+    font-family: 'poppins';
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 70px;
+    text-align: left;
+    font-weight: 500px;
+    color: teal;
+}
+.greetings .desc_pro {
+    font-family: 'poppins';
+    font-size: 20px;
+    margin-left: 70px;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: bold;
+    color:silver;
+}
+.skills .progress_head {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'poppins';
+}
+.progress-bar {
+    background-color: #959595;
+    width: 600px;
+    height: 10px;
+    margin-left: 70px;
+    border-radius: 5px;
+}
+span{
+    display: flex;
+    position: relative;
+}
+
+.progress-bar div span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #fff;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+    filter: drop-shadow(0 0 20px #fff);
+    animation: animate 8s linear infinite;
+}
+.progress-bar div {
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}
+.c {
+    background: red;
+    animation: c 5s linear forwards;
+}
+.ca {
+    background: yellowgreen;
+    animation: ca 5s linear forwards;
+}
+.java {
+    background: #FFB84C;
+    animation: java 5s linear forwards;
+} 
+.python {
+    background: #9336B4;
+    animation: python 5s linear forwards;
+} 
+.html {
+    background: #865DFF;
+    animation: html 5s linear forwards;
+}  
+.css {
+    background: #FFEA20;
+    animation: css 5s linear forwards;
+}  
+.js {
+    background: #0F6292;
+    animation: js 5s linear forwards;
+}
+@keyframes c{
+100% {
+    width: 89%;
+   }
+}
+@keyframes ca{
+100% {
+    width: 86%;
+}
+}
+@keyframes java{
+100% {
+    width: 80%;
+}
+}
+@keyframes python{
+100% {
+    width: 85%;
+}
+}
+@keyframes html{
+100% {
+    width: 95%;
+}
+}
+@keyframes css{
+100% {
+    width: 93%;
+}
+}
+@keyframes js{
+100% {
+    width: 91%;
+}
+}
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+progress-bar div {
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}

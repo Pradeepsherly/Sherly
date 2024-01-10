@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>Pradeep Raj Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body class="dark-mode">
+<header class="container">
+    <div class="page-header">
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+        <input type="checkbox" id="click" style="visibility: hidden;">
+        <label for="click" class="mainicon">
+            <div class="menu" style="display: none;">
+                <i class="bx bx-menu"></i>
+            </div>
+        </label>
+   <ul>
+    <li>
+      <a href="index.html"  style="--navAni:1">Home</a>
+    </li>
+    <li>
+      <a href="#" class="active" style="--navAni:2">About</a>
+    </li>
+    <li>
+      <a href="skills.html" style="--navAni:3">Skills</a>
+    </li>
+    <li>
+      <a href="project.html" style="--navAni:4">Projects</a>
+    </li>
+    <li>
+      <a href="contact.html" style="--navAni:5">Contact</a>
+    </li>
+   </ul>
+   <label class="mode">
+    <input type="checkbox" id="darkModeToggle">
+    <i class="bx bxs-moon">  
+    </i>
+   </label>
+  </div>
+</header>
+<div>
+    <h2 class="text">ABOUT ME</h2>
+</div>
+        <div class="greetings" style="padding: 5px;margin: 25px">
+            <p class="intro">
+          Greetings! I'm Pradeep Raj, a passionate Full Stack Developer ,
+          and I'm thrilled to invite you to explore my portfolio and delve into
+          my world of technology, creativity, and innovation.
+            </p>
+            <h2 class="heading"> Academic Pursuits and Technical Prowess</h2>
+            <p class="desc">       
+          Currently I am  fresher in this field, In my collage  I've had the opportunity to dive into a
+          multitude of fascinating subjects. My academic journey has honed my
+          programming skills, problem-solving abilities, and a solid
+          understanding of various technologies, including C, C++, JAVA, Python,
+          Web Development.
+            </p>
+            <h2 class="heading"> Passionate Projects and innovations</h2>
+            <p class="desc">      
+          The heart of my portfolio lies in the projects I've undertaken. Each
+          endeavor reflects my passion for innovation and my eagerness to tackle
+          real-world challenges. From developing website using HTML,CSS and JS to collaborating on group
+          projects, I embrace every opportunity to create meaningful solutions that push the boundaries of what's
+          possible.
+            </p>
+            <h2 class="heading"> Experience and Extracurricular Involvement</h2>
+            <p class="desc">    
+          While my love for technology runs deep, I also understand the
+          significance of a well-rounded college experience. These experiences
+          have not only allowed me to connect with like-minded individuals but
+          have also provided me with a platform to enhance my teamwork and
+          leadership abilities.
+            </p>
+            <h2 class="heading">Never-Ending Quest to Learn </h2>
+            <p class="desc">
+           I relish the challenge of staying ahead of the curve. I am a firm believer in
+          continuous learning and strive to expand my knowledge through online
+          courses, attending conferences, and exploring emerging trends in the
+          tech industry.
+            </p>
+           <h2 class="heading">Future Aspirations and Impact</h2>
+           <p class="desc">           
+          Looking to the future, I'm excited about the endless possibilities
+          that await me in the tech realm. I aspire to be a part of
+          groundbreaking projects that can positively impact people's lives.
+          Whether it's contributing to cutting-edge advancements in artificial
+          intelligence, cybersecurity, or software development, my aim is to
+          make a difference through technology.
+           </p>
+           <h2 class="heading">Beyond the Screen</h2>
+           <p class="desc">       
+          While I spend a considerable amount of time behind a computer screen,
+          I have a life beyond coding as well!
+          Embracing these passions rejuvenates my mind and fosters creativity in
+          unexpected ways
+           </p>
+           
+        <h2 class="heading">Conclusion:</h2> 
+        <p class="desc">            
+          Thank you for taking the time to explore my portfolio. As a computer science graduate with a penchant for innovation, I'm eager to share my
+          work, ideas, and aspirations with you. I hope my projects and
+          experiences inspire you as much as they've inspired me. If you'd like
+          to collaborate, discuss ideas, or simply connect, please don't
+          hesitate to reach out. Let's embark on this exciting technological
+          journey together!        
+        </p> 
+        </div>
+<script>
+      const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+</script>
+</body>
+</html>

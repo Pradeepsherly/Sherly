@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <title>Pradeep Raj Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body class="dark-mode">
+<header class="container">
+    <div class="page-header">
+        <div class="logo">
+            <a href="#"></a>
+        </div>
+        <input type="checkbox" id="click" style="visibility: hidden;">
+        <label for="click" class="mainicon">
+            <div class="menu" style="display: none;">
+                <i class="bx bx-menu"></i>
+            </div>
+        </label>
+   <ul>
+    <li>
+      <a href="index.html"  style="--navAni:1">Home</a>
+    </li>
+    <li>
+      <a href="about.html"  style="--navAni:2">About</a>
+    </li>
+    <li>
+      <a href="#" class="active" style="--navAni:3">Skills</a>
+    </li>
+    <li>
+      <a href="project.html" style="--navAni:4">Projects</a>
+    </li>
+    <li>
+      <a href="contact.html" style="--navAni:5">Contact</a>
+    </li>
+   </ul>
+   <label class="mode">
+    <input type="checkbox" id="darkModeToggle">
+    <i class="bx bxs-moon">  
+    </i>
+   </label>
+  </div>
+</header>
+        <div class="greetings" style="padding: 5px;margin: 25px">
+           <h2 class="heading">Programming Languages:</h2>
+            <p class="desc">       
+          As a college student with a passion for technology, I've developed a
+          diverse skill set that encompasses several programming languages and
+          web development. Let me share a bit about my knowledge and experience
+          in each area:
+            </p>
+            <h3> C Programming: </h3>
+            <p class="desc_pro">         
+          C is where my journey in programming began. It is a powerful and
+          foundational language, known for its efficiency and versatility. I've
+          honed my skills in C by tackling algorithmic challenges, developing
+          console-based applications, and gaining a deep understanding of memory
+          management. Working with C has taught me the importance of precision
+          and optimization in coding, which has influenced my approach to other
+          languages as well.
+            </p>
+            <h3> C++ Programming: </h3>
+            <p class="desc_pro">     
+          Building upon my knowledge of C, I ventured into C++, a popular
+          object-oriented extension of C. With C++, I've explored the principles
+          of object-oriented programming (OOP), which allows me to design
+          modular and reusable code. My experience with C++ includes developing
+          desktop applications, implementing data structures and algorithms, and
+          leveraging its robust standard library to enhance the functionality of
+          my projects.
+            </p>
+            <h3> JAVA    : </h3>
+            <p class="desc_pro">        
+          Java is another language I've delved into extensively. Renowned for
+          its "write once, run anywhere" capability, Java has opened up the
+          world of cross-platform development to me. I've worked on various Java
+          projects, including Android app development, web applications using
+          Java Servlets, and backend services using Spring Framework. Java's
+          object-oriented nature and robust ecosystem have enabled me to create
+          scalable and efficient solutions.
+            </p>
+            <h3> Python   : </h3>
+            <p class="desc_pro">   
+          Python holds a special place in my heart as a versatile and
+          beginner-friendly language. I've used Python in a wide range of
+          applications, from data analysis and machine learning to scripting and
+          web scraping. Its readability and expressiveness make it an excellent
+          choice for prototyping and building quick solutions. I am continuously
+          exploring Python libraries and frameworks, such as NumPy, Pandas,
+          TensorFlow, and Django, to enhance my capabilities in data science and
+          web development.   
+            </p>
+            <h3> Web Development   : </h3>
+            <p class="desc_pro">       
+          Web development has been a fascinating journey for me, as it allows me
+          to blend my programming skills with creativity to build interactive
+          and dynamic websites. I am proficient in HTML, CSS, and JavaScript,
+          the core trio that forms the foundation of web development. I've
+          created responsive and visually appealing websites, incorporating
+          modern web technologies and frameworks like React and Node.js.
+          Understanding both front-end and back-end development has enabled me
+          to design full-stack web applications.
+            </p>
+
+            <div class="skills">
+                <h3 class="progress_head">C</h3>
+                <div class="progress-bar">
+                    <div class="c">
+                        <span> 89</span>
+                    </div>
+                </div>
+                <h3 class="progress_head">C++</h3>
+                <div class="progress-bar">
+                    <div class="ca">
+                        <span> 86</span>
+                    </div>
+                </div>
+                <h3 class="progress_head">JAVA</h3>
+                <div class="progress-bar">
+                    <div class="java">
+                        <span> 80</span>
+                    </div>
+                </div>
+                <h3 class="progress_head">Python</h3>
+                <div class="progress-bar">
+                    <div class="python">
+                        <span> 85</span>
+                    </div>
+                </div>
+                <h3 class="progress_head">HTML</h3>
+                <div class="progress-bar">
+                    <div class="html">
+                        <span> 95</span>
+                    </div>
+                </div>
+                <h3 class="progress_head">CSS</h3>
+                <div class="progress-bar">
+                    <div class="css">
+                        <span> 93</span>
+                    </div>
+                </div>
+                <h3 class="progress_head">JavaScript</h3>
+                <div class="progress-bar">
+                    <div class="js">
+                        <span> 91</span>
+                    </div>
+                </div>
+            </div>
+        <h2 class="heading">Conclusion:</h2> 
+        <p class="desc">            
+          Thank you for taking the time to explore my portfolio. As a computer science graduate with a penchant for innovation, I'm eager to share my
+          work, ideas, and aspirations with you. I hope my projects and
+          experiences inspire you as much as they've inspired me. If you'd like
+          to collaborate, discuss ideas, or simply connect, please don't
+          hesitate to reach out. Let's embark on this exciting technological
+          journey together!        
+        </p> 
+        </div>
+<script>
+      const darkModeToggle = document.getElementById('darkModeToggle');
+        const body = document.body;
+        const isDarkMode = localStorage.getItem('darkMode') === 'enabled';
+        if (isDarkMode) {
+            body.classList.add('dark-mode');
+            darkModeToggle.checked = true;
+        }
+        darkModeToggle.addEventListener('change', () => {
+            if (darkModeToggle.checked) {
+                body.classList.add('dark-mode');
+                localStorage.setItem('darkMode', 'enabled');
+            } else {
+                body.classList.remove('dark-mode');
+                localStorage.setItem('darkMode', 'disabled');
+            }
+        });
+</script>
+</body>
+</html>
